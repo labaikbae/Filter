@@ -12,5 +12,5 @@ wowebook.org###footer, #comments
 z-library.sk##.footer__copyright, div[style="padding: 40px 0 10px 0;"],.searchFormLogo.hideInDesktopApp, h1[style="font-size: 14px; text-align: center; margin: 16px 0;"], .social-share
 
 ! TaiWebs
-taiwebs.com##+js(click-element, a[href*="en.taiwebs.com/"])
+taiwebs.com##+js(trusted-click-element, [href="en.taiwebs.com/"], , , log, 1)
 taiwebs.com##.networking_sidebar, .footer
