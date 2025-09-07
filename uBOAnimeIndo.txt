@@ -1,3 +1,7 @@
+! Title: ⛩️ uBO Anime Indonesia
+! Description: In a world dominated by bitLy, adfLy, and several thousand other malware cover-up tools, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary ?/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.
+! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
+
 ! MyNimeku
 www.mynimeku.com##.gap-2.items-center.lg\:flex.hidden.lg\:mis-8, .mbe-9.items-end.gap-5.md\:flex.bg-opacity-100.bg-secondary.plb-5.lg\:pli-5.w-full, .episode-anime-info.episode-head, .anime-share.items-end.gap-5.md\:block.bg-opacity-100.md\:plb-5.w-full, .z-40.relative.pli-5.plb-8
 
