@@ -2,8 +2,8 @@
 ! Homepage: https://github.com/labaikbae/Filter
 
 ! Tut4it
-tut4it.com###post-136591, #custom_html-2, #block-2, .site-footer, .menu-bar-items, .azc_bbc_center, .comments-area
-tut4u.com###post-16, .menu-bar-items, #custom_html-3, .site-footer, .azc_bbc_center, .comments-area
+tut4it.com###post-136591, #custom_html-2, #block-2, .site-footer, .menu-bar-items, .comments-area
+tut4u.com###post-16, .menu-bar-items, #custom_html-3, .site-footer, .comments-area
 
 ! WOwEbook
 wowebook.org###footer, #comments
