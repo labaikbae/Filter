@@ -1,4 +1,4 @@
-! Title: 💥 Pirate site
+! Title: 💥 uBO Pirate site
 ! Homepage: https://github.com/labaikbae/Filter
 
 ! Tut4it
