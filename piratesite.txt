@@ -1,0 +1,16 @@
+! Title: 💥 Pirate site
+! Homepage: https://github.com/labaikbae/Filter
+
+! Tut4it
+tut4it.com###post-136591, #custom_html-2, #block-2, .site-footer, .menu-bar-items, .azc_bbc_center, .comments-area
+tut4u.com###post-16, .menu-bar-items, #custom_html-3, .site-footer, .azc_bbc_center, .comments-area
+
+! WOwEbook
+wowebook.org###footer, #comments
+
+! Z-Library
+z-library.sk##.footer__copyright, div[style="padding: 40px 0 10px 0;"],.searchFormLogo.hideInDesktopApp, h1[style="font-size: 14px; text-align: center; margin: 16px 0;"], .social-share
+
+! TaiWebs
+taiwebs.com##+js(click-element, a[href*="en.taiwebs.com/"])
+taiwebs.com##.networking_sidebar, .footer
