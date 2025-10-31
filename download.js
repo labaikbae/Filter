@@ -1,7 +1,7 @@
 var tong = 0;
 var errorlogin = false;
 var auto_refresh = setInterval(function(){$("#server_stats").load('download.php?infosv='+ Math.random());}, 1000);
-var turnstileVerified = false;
+var turnstileVerified = true;
 
 function get(form) {
     var links = form.links.value;
