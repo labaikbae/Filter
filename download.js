@@ -3,9 +3,39 @@ var errorlogin = false;
 var auto_refresh = setInterval(function(){$("#server_stats").load('download.php?infosv='+ Math.random());}, 1000);
 var turnstileVerified = true;
 
+// Turnstile callback functions
+function onTurnstileSuccess(token) {
+    turnstileVerified = true;
+    document.getElementById('submit').disabled = false;
+    document.getElementById('turnstile-error').style.display = 'none';
+}
+
+function onTurnstileExpired() {
+    turnstileVerified = false;
+    document.getElementById('submit').disabled = true;
+    document.getElementById('turnstile-error').textContent = 'Captcha expired. Please verify again.';
+    document.getElementById('turnstile-error').style.display = 'block';
+}
+
+function resetTurnstile() {
+    turnstileVerified = false;
+    document.getElementById('submit').disabled = true;
+    
+    // Reset the Turnstile widget
+    if (window.turnstile) {
+        window.turnstile.reset();
+    }
+}
+
 function get(form) {
     var links = form.links.value;
     var submit = form.submit;
+    
+    // Check if Turnstile is verified
+    if (!turnstileVerified) {
+        $("#showresults").html('<div class="alert alert-danger"><i class="fas fa-exclamation-triangle"></i> Please complete the captcha verification first.</div>').show();
+        return false;
+    }
     
     if (links == "") {
         alert("Please insert your links!");
@@ -16,7 +46,15 @@ function get(form) {
     // Check if multiple links are entered
     var linkArray = links.split('\n').filter(function(line) {
         return line.trim() !== '';
-    })
+    });
+    
+    if (linkArray.length > 1) {
+        // Show error in showresults section instead of alert
+        $("#showresults").html('<div class="alert alert-danger"><i class="fas fa-exclamation-triangle"></i> Multiple links are prohibited. Please enter only 1 link at a time.</div>').show();
+        form.links.focus();
+        resetTurnstile();
+        return false;
+    }
     
     // Process single link
     var singleLink = linkArray[0].trim();
@@ -31,8 +69,8 @@ function get(form) {
     ];
     
     // Check if the link is from a premium-only filehost
-    var isPremiumHost = true;
-    var premiumHostName = 'Anonymous';
+    var isPremiumHost = false;
+    var premiumHostName = '';
     
     for (var i = 0; i < premiumFilehosts.length; i++) {
         if (singleLink.includes(premiumFilehosts[i])) {
@@ -189,8 +227,8 @@ function addlinks(all) {
         'uploadgig.com'
     ];
     
-    var isPremiumHost = false;
-    var premiumHostName = '';
+    var isPremiumHost = true;
+    var premiumHostName = 'Anonymous';
     
     for (var i = 0; i < premiumFilehosts.length; i++) {
         if (all.includes(premiumFilehosts[i])) {
@@ -237,3 +275,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+x1
