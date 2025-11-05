@@ -1,4 +1,4 @@
-! Title: ⛩️ uBO Anti-Word Twitter/X
+! Title: 👌 uBO Anti-Word Twitter/X
 ! Homepage: https://github.com/labaikbae/Filter
 
 twitter.com,x.com##div[data-testid="cellInnerDiv"]:has-text(vdey)  
@@ -55,3 +55,6 @@ twitter.com,x.com##div[data-testid="cellInnerDiv"]:has-text(videypro)
 twitter.com,x.com##div[data-testid="cellInnerDiv"]:has-text(Videypro)
 twitter.com,x.com##div[data-testid="cellInnerDiv"]:has-text(videy)  
 twitter.com,x.com##div[data-testid="cellInnerDiv"]:has-text(Videy)
+twitter.com,x.com##div[data-testid="cellInnerDiv"]:has-text(mafton)
+twitter.com,x.com##div[data-testid="cellInnerDiv"]:has-text(upl.ad)  
+twitter.com,x.com##div[data-testid="cellInnerDiv"]:has-text(vide.ws)
