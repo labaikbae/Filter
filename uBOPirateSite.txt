@@ -19,7 +19,7 @@ taiwebs.com##.networking_sidebar.networking,.footer,#sofware,#comment_id,#graphc
 
 ! Fontsloader
 fontsloader.com## #fullDownloadButton,.grey:others()
-ifonts.xyz##.download-link:others()
+ifonts.xyz##.download-link,.whb-row,.container-box:others()
 
 ! Leechpremium
 leechpremium.link##.premium-cta,.footer
